@@ -35,7 +35,8 @@ public:
 	virtual void draw() override;
 
 private:
-	std::array<video::SColor, 4> m_colors;
-	std::array<video::SColor, 4> m_bordercolors;
-	std::array<s32, 4> m_borderwidths;
+	const core::rect<s32> &rectangle:
+	std::array<video::SColor, 7> m_colors;
+	std::array<video::SColor, 9> m_bordercolors;
+	std::array<s32, 7> m_borderwidths;
 };
